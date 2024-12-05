@@ -1,8 +1,16 @@
+html,
 body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: rgb(232, 235, 237);
   background-color: #151616;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: rgb(232, 235, 237);
-  margin: 0;
   text-decoration: none;
 }
 
@@ -12,10 +20,9 @@ nav {
   align-items: center;
   padding: 1rem 2rem;
   background-color: rgb(255, 249, 249);
-  
 }
 
-nav .logo {
+.nav-logo {
   font-size: 20px;
   color: rgb(0, 0, 0);
 }
@@ -46,11 +53,20 @@ nav .logo {
   color: rgb(13, 12, 12);
 }
 
+main {
+  flex: 1 1 0%;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  text-decoration: none;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+.h-full {
+  height: 100%;
+}
