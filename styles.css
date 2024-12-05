@@ -23,7 +23,7 @@
 .inv {
   position: absolute;
   top: 50%;
-  width: 16rem;
+  width: 10rem;
   opacity: 0%;
   transform: translate(0%, -50%);
   transition: ease-in-out 0.4s;
