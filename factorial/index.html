@@ -7,22 +7,6 @@
   <title>Assignment #3 - Factorial, Sum, Average</title>
   <link rel="stylesheet" href="../global.css">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #282c34;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
     .container {
       background-color: #444;
       padding: 30px;
@@ -121,24 +105,27 @@
     </ul>
   </nav>
 
-  <div class="container">
-    <h1>Assignment #3 - Factorial, Sum, Average</h1>
+  <main class="flex-center flex-column">
 
-    <div class="converter">
-      <label for="numberInput">Enter a Natural Number (N):</label>
-      <input type="number" id="numberInput" placeholder="Enter a number" oninput="calculateResults()">
+    <div class="container">
+      <h1>Assignment #3 - Factorial, Sum, Average</h1>
+
+      <div class="converter">
+        <label for="numberInput">Enter a Natural Number (N):</label>
+        <input type="number" id="numberInput" placeholder="Enter a number" oninput="calculateResults()">
+      </div>
+
+      <div class="result" id="factorialResult"></div>
+      <div class="result" id="sumResult"></div>
+      <div class="result" id="averageResult"></div>
+
+      <button onclick="resetResults()">Reset</button>
+
+      <div class="footer">
+        <p>Assignment #3 - Factorial, Sum, and Average</p>
+      </div>
     </div>
-
-    <div class="result" id="factorialResult"></div>
-    <div class="result" id="sumResult"></div>
-    <div class="result" id="averageResult"></div>
-
-    <button onclick="resetResults()">Reset</button>
-
-    <div class="footer">
-      <p>Assignment #3 - Factorial, Sum, and Average</p>
-    </div>
-  </div>
+  </main>
 
   <script>
     function calculateResults() {

@@ -6,21 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Payroll</title>
   <link rel="stylesheet" href="../global.css">
-  <link rel="stylesheet" href="./styles.css">
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to bottom, #84fab0, #8fd3f4);
-      color: #333;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-    }
-
     .container {
       background: #fff;
       border-radius: 15px;
@@ -101,22 +87,25 @@
     </ul>
   </nav>
 
-  <div class="container">
-    <h1>Simple Payroll Calculator</h1>
+  <main class="flex-center flex-column">
 
-    <label for="name">Employee Name:</label>
-    <input type="text" id="name" placeholder="Enter employee's name...">
+    <div class="container">
+      <h1>Simple Payroll Calculator</h1>
 
-    <label for="hours">Hours Worked:</label>
-    <input type="number" id="hours" placeholder="Enter total hours worked...">
+      <label for="name">Employee Name:</label>
+      <input type="text" id="name" placeholder="Enter employee's name...">
 
-    <label for="rate">Hourly Rate (in PHP):</label>
-    <input type="number" id="rate" placeholder="Enter hourly rate...">
+      <label for="hours">Hours Worked:</label>
+      <input type="number" id="hours" placeholder="Enter total hours worked...">
 
-    <button id="calculate-btn">Calculate Payroll</button>
+      <label for="rate">Hourly Rate (in PHP):</label>
+      <input type="number" id="rate" placeholder="Enter hourly rate...">
 
-    <div class="result" id="result"></div>
-  </div>
+      <button id="calculate-btn">Calculate Payroll</button>
+
+      <div class="result" id="result"></div>
+    </div>
+  </main>
 
   <script>
     document.getElementById('calculate-btn').addEventListener('click', () => {
