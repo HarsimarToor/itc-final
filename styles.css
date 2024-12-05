@@ -9,11 +9,11 @@
 }
 
 #assgn:hover .inv.left {
-  transform: translate(calc(-50% - 150%), -50%);
+  transform: translate(calc(-40%), -50%);
 }
 
 #assgn:hover .inv.right {
-  transform: translate(calc(-50% + 150%), -50%);
+  transform: translate(calc(40%), -50%);
 }
 
 .mom-inv {
@@ -23,9 +23,18 @@
 .inv {
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 4rem;
+  width: 16rem;
   opacity: 0%;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, -50%);
   transition: ease-in-out 0.4s;
+}
+
+.inv.right {
+  left: 0;
+  text-align: right;
+}
+
+.inv.left {
+  right: 0;
+  text-align: left;
 }
