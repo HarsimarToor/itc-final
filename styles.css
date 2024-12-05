@@ -1,0 +1,31 @@
+#assgn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+#assgn:hover .inv {
+  opacity: 100%;
+}
+
+#assgn:hover .inv.left {
+  transform: translate(calc(-50% - 150%), -50%);
+}
+
+#assgn:hover .inv.right {
+  transform: translate(calc(-50% + 150%), -50%);
+}
+
+.mom-inv {
+  position: relative;
+}
+
+.inv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4rem;
+  opacity: 0%;
+  transform: translate(-50%, -50%);
+  transition: ease-in-out 0.4s;
+}
